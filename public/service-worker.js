@@ -1,0 +1,1 @@
+importScripts('https://api-cis.exponea.com/js/service-worker.min.js');
