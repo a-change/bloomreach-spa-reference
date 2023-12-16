@@ -15,8 +15,8 @@
  */
 
 module.exports = {
-  output: 'export',
-  distDir: 'dist',
+  // output: 'export',
+  // distDir: 'dist',
   trailingSlash: true,
   reactStrictMode: true,
   eslint: {
