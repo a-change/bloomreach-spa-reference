@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-export const NEXT_PUBLIC_BRXM_ENDPOINT = process.env.NEXT_PUBLIC_BRXM_ENDPOINT ?? '';
+export const NEXT_PUBLIC_BRXM_ENDPOINT = process.env.NEXT_PUBLIC_BRXM_ENDPOINT ?? 'https://sandbox-sales15.bloomreach.io/delivery/site/v1/channels/nikolays-reference-spa/pages?preview-token=771f6728-e035-4852-8a3d-5bf07f3b03ac';
 export const NEXT_PUBLIC_BR_MULTI_TENANT_SUPPORT = process.env.NEXT_PUBLIC_BR_MULTI_TENANT_SUPPORT === 'true';
 export const NEXT_PUBLIC_PERSONALIZATION_PROJECT_TOKEN = process.env.NEXT_PUBLIC_PERSONALIZATION_PROJECT_TOKEN ?? '';
 export const NEXT_PUBLIC_PERSONALIZATION_API_URL = process.env.NEXT_PUBLIC_PERSONALIZATION_API_URL ?? '';
