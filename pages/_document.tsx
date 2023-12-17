@@ -43,8 +43,7 @@ class MyDocument extends Document {
           },
           new_experiments: {
             mode: 'sync'
-          },
-          webOptimization: false
+          }
       });
       exponea.start();
       console.log("ANOTHER SCRIPT Document!")`
