@@ -23,6 +23,7 @@ import { BrRichTextContent } from '../BrRichTextContent';
 import styles from './ContentPage.module.scss';
 
 export function ContentPage({ component, page }: BrProps<ContainerItem>): React.ReactElement | null {
+  console.log('[ContentPage] Page:', page);
   if (!component || !page) { return null; }
 
   const document = page.getDocument<Document>();

@@ -52,17 +52,17 @@ const Index: NextPage<IndexPageProps> = ({
 };
 
 Index.getInitialProps = async ({ req: request, res: response, asPath: path, query }) => {
-  // console.log('[getServerSideProps]: path=', path);
-  // console.log('[getServerSideProps]: query=', query);
+  console.log('[getServerSideProps]: path=', path);
+  console.log('[getServerSideProps]: query=', query);
 
   const configuration = buildConfiguration(path ?? '/');
-  // console.log('[getServerSideProps]: configuration=', configuration);
+  console.log('[getServerSideProps]: configuration=', configuration);
   const page = await initialize({ ...configuration, request, httpClient: axios as any });
   const pageJson = page.toJSON();
-  // console.log('[getServerSideProps]: page=', pageJson);
+  console.log('[getServerSideProps]: page=', pageJson);
 
   const commerceConfig = loadCommerceConfig(pageJson, query);
-  // console.log('[getServerSideProps]: commerceConfig=', commerceConfig);
+  console.log('[getServerSideProps]: commerceConfig=', commerceConfig);
 
   const props: IndexPageProps = { configuration, commerceConfig, page: pageJson };
 

@@ -23,6 +23,7 @@ interface MetaProps {
 }
 
 export function Meta({ page }: MetaProps): JSX.Element {
+  console.log('[Meta] page:', page);
   const router = useRouter();
   const document = page.getDocument<Document>();
   const { title, description, preventIndexing, ogCompound } = document?.getData<PageDocument>() ?? {};
